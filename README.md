@@ -1,9 +1,6 @@
 # intelliarts test application
-
-This application gives you an opportunity to manage 
-purchases in your little store. You can calculate the report for a year in any currency that you want.
-Using this service you can input information about purchase in format 'date/price/currency/name' and save it to MySql db. Also, you will have information about all purchases 
-with pagination and opportunity to delete purchases from selected date. Service use external Fixer API ( http://fixer.io) to get information about rates.
+This application gives you an opportunity to manage purchases in A small store. You can calculate income for a year in any currency. 
+Using this service you can input information about purchase in format 'date/price/currency/name' and save it to MySql db. Also, you will have information about all purchases with pagination and opportunity to delete purchases by selected date.
 ## Getting Started
 
 ### Prerequisites
@@ -38,11 +35,11 @@ results.pagination.link=http://localhost:8080/all?page=
 ```
 Also you need to input your unique fixer key
 ```
-http://data.fixer.io/api/latest?access_key={key}&format=1
+http://data.fixer.io/api/latest?access_key={input your key}&format=1
 ```
 ### Database(MySQL) configuration
 At first you should run MySql server and create database(default name in following properties - shop)
-After you should change connection properties in `application.properties` and set your connection string. 
+After that, change connection properties in `application.properties` and set your connection string. 
 By default configuration is :
 ```
 spring.datasource.url=jdbc:mysql://localhost:3306/shop?serverTimezone=UTC
@@ -54,7 +51,7 @@ spring.datasource.password={password}
 ```
 ### Running the tests
 
-After configuration you should run all tests
+Then, run all tests
 ```
 mvn test
 ```
